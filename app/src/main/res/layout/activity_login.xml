@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back1" />
+
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="125dp"
+            android:background="@drawable/logo"
+            android:layout_marginBottom="10dp"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:fontFamily="@font/gotham"
+            android:layout_marginBottom="30dp"
+            >
+        </TextView>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textEmaillog"
+                android:hint="  Email"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:padding="15dp"
+                android:textColorHint="#FF5722"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="textEmailAddress"
+                >
+            </EditText>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textPasslog"
+                android:hint="  Password"
+                android:drawableStart="@drawable/ic_baseline_lock_open_24"
+                android:padding="15dp"
+                android:textColorHint="#FF5722"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="textPassword"
+                >
+            </EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnLoginact"
+            >
+        </Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in With Google"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            >
+        </TextView>
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not Registered?"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            >
+        </TextView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sign Up"
+            android:textSize="18sp"
+            android:id="@+id/btnRegister"
+            android:layout_marginBottom="30dp"
+            >
+        </Button>
+        <ProgressBar
+            android:id="@+id/progressBarlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            >
+
+        </ProgressBar>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
